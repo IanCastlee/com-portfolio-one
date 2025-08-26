@@ -1,0 +1,138 @@
+.shoot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  padding-top: 30px;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px 10px 30px;
+
+    .titleCategoryWrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .titleWrapper {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        .titleIcon {
+          height: 50px;
+          width: 50px;
+          z-index: 1;
+
+          animation: spin linear 5s infinite;
+        }
+
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: #fff;
+          z-index: 2;
+          margin-left: -30px;
+        }
+      }
+
+      .categorySelector {
+        height: 30px;
+        background-color: #000000;
+        border: 1px solid #2a2929;
+        color: #fff;
+        border-radius: 4px;
+        padding: 0 20px;
+
+        &:focus {
+          outline: none;
+        }
+
+        option {
+          padding: 20px 0;
+        }
+      }
+    }
+    .btnViewAll {
+      color: #fff;
+      background-color: #000000;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      cursor: pointer;
+      .viewAllIcon {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .shootsContainerWrapper {
+    position: relative;
+    background-color: #181818;
+
+    .leftButtonIcon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      font-size: 30px;
+      color: gray;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+      left: 30px;
+      border-radius: 50%;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .rightButtonIcon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      font-size: 30px;
+      color: gray;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+      border-radius: 50%;
+      right: 30px;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .shootsContainer {
+      column-count: 4;
+      column-gap: 7px;
+      padding: 20px;
+
+      @media (max-width: 1200px) {
+        column-count: 3;
+      }
+
+      @media (max-width: 768px) {
+        column-count: 2;
+      }
+
+      @media (max-width: 480px) {
+        column-count: 1;
+      }
+    }
+  }
+}

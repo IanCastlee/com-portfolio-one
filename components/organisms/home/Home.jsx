@@ -1,7 +1,7 @@
 import styles from "./Home.module.scss";
 import Hero from "../../molecules/hero/Hero";
 import About from "../../molecules/about/About";
-import Shoots from "../../molecules/shoots/Shoots";
+import Shoots from "../../molecules/shots/Shoots";
 
 function Home() {
   return (

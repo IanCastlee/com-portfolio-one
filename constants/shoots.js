@@ -1,7 +1,7 @@
 export const shoots = [
   {
     id: 1,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -10,7 +10,7 @@ export const shoots = [
   },
   {
     id: 2,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -19,7 +19,7 @@ export const shoots = [
   },
   {
     id: 3,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -28,7 +28,7 @@ export const shoots = [
   },
   {
     id: 4,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -37,7 +37,7 @@ export const shoots = [
   },
   {
     id: 5,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -46,7 +46,7 @@ export const shoots = [
   },
   {
     id: 6,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -55,7 +55,7 @@ export const shoots = [
   },
   {
     id: 7,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
@@ -64,56 +64,78 @@ export const shoots = [
   },
   {
     id: 8,
-    category: "wedding",
+    category: "Wedding",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
     wImage: "../src/assets/images/wedding8.jpg",
   },
+
+  //Nature
   {
-    id: 9,
-    category: "wedding",
+    id: 14,
+    category: "Nature",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding9.jpg",
+    wImage: "../src/assets/images/wedding1.jpg",
   },
   {
-    id: 10,
-    category: "wedding",
+    id: 15,
+    category: "Nature",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding10.jpg",
+    wImage: "../src/assets/images/wedding1.jpg",
   },
   {
-    id: 11,
-    category: "wedding",
+    id: 16,
+    category: "Nature",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding11.jpg",
+    wImage: "../src/assets/images/wedding1.jpg",
   },
   {
-    id: 12,
-    category: "wedding",
+    id: 17,
+    category: "Nature",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding12.jpg",
+    wImage: "../src/assets/images/wedding1.jpg",
+  },
+
+  //Street
+  {
+    id: 18,
+    category: "Street",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+      necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
+      quia animi natus velit consequuntur fugit eaque laborum non reiciendis
+      accusamus neque unde facere.`,
+    wImage: "../src/assets/images/wedding1.jpg",
   },
   {
-    id: 13,
-    category: "wedding",
+    id: 19,
+    category: "Street",
     desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding13.jpg",
+    wImage: "../src/assets/images/wedding1.jpg",
+  },
+  {
+    id: 20,
+    category: "Street",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+      necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
+      quia animi natus velit consequuntur fugit eaque laborum non reiciendis
+      accusamus neque unde facere.`,
+    wImage: "../src/assets/images/wedding1.jpg",
   },
 ];

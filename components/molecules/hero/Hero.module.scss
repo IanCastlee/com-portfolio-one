@@ -1,14 +1,28 @@
 .heroWrapper {
   display: flex;
   flex-direction: column;
-
-  background-image: url("../../../src/assets/images/bg/7.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: -1;
   pointer-events: none;
+  animation: slideShow 5s infinite;
+
+  @keyframes slideShow {
+    0% {
+      background-image: url("../../../src/assets/images/bg/hero-bg7.jpg");
+    }
+    33% {
+      background-image: url("../../../src/assets/images/bg/hero-bg6.jpg");
+    }
+    66% {
+      background-image: url("../../../src/assets/images/bg/hero-bg5.jpg");
+    }
+    100% {
+      background-image: url("../../../src/assets/images/bg/hero-bg4.jpg");
+    }
+  }
 
   .hero {
     position: relative;

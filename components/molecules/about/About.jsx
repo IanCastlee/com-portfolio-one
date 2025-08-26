@@ -28,7 +28,10 @@ function About() {
         transition={{ duration: 0.5 }}
         className={styles.aboutContent}
       >
-        <h2>Who Im I and whats I do?</h2>
+        <div className={styles.titleWrapper}>
+          <img className={styles.titleIcon} src={images.cameraIcon} />
+          <h2>Who Im I and whats I do?</h2>
+        </div>
 
         <p>
           Hi, my name is Martin Vegas. I am an artist and photographer.
