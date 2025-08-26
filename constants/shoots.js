@@ -6,7 +6,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding2.jpg",
+    wImage: "/images/wedding2.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding3.jpg",
+    wImage: "/images/wedding3.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding4.jpg",
+    wImage: "/images/wedding4.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding5.jpg",
+    wImage: "/images/wedding5.jpg",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding6.jpg",
+    wImage: "/images/wedding6.jpg",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding7.jpg",
+    wImage: "/images/wedding7.jpg",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding8.jpg",
+    wImage: "/images/wedding8.jpg",
   },
 
   //Nature
@@ -80,7 +80,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
   {
     id: 15,
@@ -89,7 +89,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
   {
     id: 16,
@@ -98,7 +98,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
   {
     id: 17,
@@ -107,7 +107,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
 
   //Street
@@ -118,7 +118,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
   {
     id: 19,
@@ -127,7 +127,7 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
   {
     id: 20,
@@ -136,6 +136,6 @@ export const shoots = [
       necessitatibus, voluptatibus, sed provident assumenda cupiditate rerum
       quia animi natus velit consequuntur fugit eaque laborum non reiciendis
       accusamus neque unde facere.`,
-    wImage: "../src/assets/images/wedding1.jpg",
+    wImage: "/images/wedding1.jpg",
   },
 ];
