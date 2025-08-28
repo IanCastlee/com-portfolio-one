@@ -5,5 +5,7 @@
     border-radius: 3px;
     object-fit: cover;
     max-height: 300px;
+    z-index: 9;
+    cursor: pointer;
   }
 }

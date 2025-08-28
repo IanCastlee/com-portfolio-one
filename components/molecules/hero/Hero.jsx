@@ -43,13 +43,24 @@ function Hero() {
       <div className={styles.hero}>
         <div className={styles.leftHero}>
           <h1>
-            Hello my Name is <span style={{ color: "#39ff14" }}>Pio</span>
+            Hello, I’m{" "}
+            <span
+              style={{
+                color: "#000000",
+                fontSize: "60px",
+                WebkitTextStroke: "1px #ff6600",
+              }}
+            >
+              Pio
+            </span>
           </h1>
-          <h2>Photographer</h2>
+
+          <h2>Visual storyteller & Photographer.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis enim
-            necessitatibus aliquam ipsa vel perspiciatis eius dignissimos quo
-            atque doloribus?
+            Capturing moments that speak louder than words. Turning everyday
+            scenes into timeless stories. <br />
+            <br />
+            Let’s create something unforgettable together.
           </p>
 
           <div className={styles.socialLinks}>

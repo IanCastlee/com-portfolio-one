@@ -25,18 +25,25 @@
           height: 50px;
           width: 50px;
           z-index: 1;
+          opacity: 0;
+          transform: rotate(0deg);
+          transition: opacity 0.3s ease;
 
-          animation: spin linear 5s infinite;
+          &.visible {
+            opacity: 1;
+            animation: spin 2s linear infinite;
+
+            @keyframes spin {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+              }
+            }
+          }
         }
 
-        @keyframes spin {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
         h2 {
           font-size: 1.5rem;
           color: #fff;
@@ -82,40 +89,6 @@
   .shootsContainerWrapper {
     position: relative;
     background-color: #181818;
-
-    .leftButtonIcon {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      font-size: 30px;
-      color: gray;
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.4);
-      transition: background-color 0.3s ease;
-      left: 30px;
-      border-radius: 50%;
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-    }
-
-    .rightButtonIcon {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      font-size: 30px;
-      color: gray;
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.4);
-      transition: background-color 0.3s ease;
-      border-radius: 50%;
-      right: 30px;
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-    }
 
     .shootsContainer {
       column-count: 4;

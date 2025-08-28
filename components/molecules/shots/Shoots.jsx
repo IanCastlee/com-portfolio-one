@@ -2,12 +2,14 @@ import { shoots } from "../../../constants/shoots";
 import styles from "./Shoots.module.scss";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { images } from "../../../constants/images";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ImageCard from "../imageCard/ImageCard";
 import { RiGalleryView } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 function Shoots() {
+  const iconRef = useRef(null);
+
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("All Category");
 
@@ -20,15 +22,43 @@ function Shoots() {
       : shoots;
 
   const handleRedirect = () => {
-    navigate("/shots");
+    navigate(`/shots/${selectedCategory}`);
   };
+
+  //animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          iconRef.current.classList.add(styles.visible);
+        } else {
+          iconRef.current.classList.remove(styles.visible);
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    if (iconRef.current) {
+      observer.observe(iconRef.current);
+    }
+
+    return () => {
+      if (iconRef.current) observer.unobserve(iconRef.current);
+    };
+  }, []);
 
   return (
     <div className={styles.shoot}>
       <div className={styles.heading}>
         <div className={styles.titleCategoryWrapper}>
           <div className={styles.titleWrapper}>
-            <img className={styles.titleIcon} src={images.shootIcon} />
+            <img
+              ref={iconRef}
+              className={styles.titleIcon}
+              src={images.shootIcon}
+            />
             <h2>Clicks & Captures</h2>
           </div>
 
@@ -51,16 +81,12 @@ function Shoots() {
         </button>
       </div>
       <div className={styles.shootsContainerWrapper}>
-        <BsArrowLeftCircle className={styles.leftButtonIcon} />
-
         <div className={styles.shootsContainer}>
           {mapCategory &&
             mapCategory.slice(0, 10).map((item) => {
               return <ImageCard item={item} key={item.id} />;
             })}
         </div>
-
-        <BsArrowRightCircle className={styles.rightButtonIcon} />
       </div>
     </div>
   );

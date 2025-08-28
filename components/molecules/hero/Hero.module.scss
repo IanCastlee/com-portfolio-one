@@ -42,7 +42,7 @@
       flex-direction: column;
 
       h1 {
-        color: #fff;
+        color: gray;
         font-size: 2.5rem;
         position: relative;
         display: inline-block;
@@ -72,11 +72,12 @@
 
       h2 {
         font-size: 20px;
-        color: #39ff14;
+        color: lightgrey;
         position: relative;
         display: inline-block;
         overflow: hidden;
         max-width: fit-content;
+        font-weight: bold;
 
         &::before {
           content: "";

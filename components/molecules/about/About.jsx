@@ -14,12 +14,10 @@ function About() {
         viewport={{ once: false, amount: 0.2 }}
         className={styles.aboutImageWrapper}
       >
-        <LazyLoadImage
+        <img
           className={styles.aboutImg}
           src={images.aboutBgImage}
           alt="About background"
-          effect="blur"
-          visibleByDefault={true}
         />
       </motion.div>
       <motion.div
