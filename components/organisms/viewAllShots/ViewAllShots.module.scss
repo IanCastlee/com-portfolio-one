@@ -40,3 +40,49 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    background-color: #000000;
+    height: 100vh;
+    padding-top: 50px;
+    .heading {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      gap: 50px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+
+      .backIcon {
+        font-size: 25px;
+        cursor: pointer;
+        color: #ffffff;
+      }
+
+      h2 {
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+
+    .content {
+      column-count: 4;
+      column-gap: 7px;
+      padding: 10px;
+
+      @media (max-width: 1200px) {
+        column-count: 3;
+      }
+
+      @media (max-width: 768px) {
+        column-count: 2;
+      }
+
+      @media (max-width: 480px) {
+        column-count: 3;
+      }
+    }
+  }
+}

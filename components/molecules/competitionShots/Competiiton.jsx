@@ -1,7 +1,8 @@
-import React from "react";
+import styles from "./competitionShots.module.scss";
+import { competition } from "../../../constants/shoots";
 
 function Competiiton() {
-  return <div>Competiiton</div>;
+  return <div className={styles.competition}></div>;
 }
 
 export default Competiiton;

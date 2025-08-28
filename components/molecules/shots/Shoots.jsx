@@ -83,7 +83,7 @@ function Shoots() {
       <div className={styles.shootsContainerWrapper}>
         <div className={styles.shootsContainer}>
           {mapCategory &&
-            mapCategory.slice(0, 10).map((item) => {
+            mapCategory.slice(0, 8).map((item) => {
               return <ImageCard item={item} key={item.id} />;
             })}
         </div>
