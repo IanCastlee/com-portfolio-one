@@ -19,32 +19,28 @@ function Home() {
   const [flashKey, setFlashKey] = useState(0);
   const wrapperRef = useRef(null);
 
-  const handleClick = () => {
-    if (wrapperRef.current) {
-      const rect = wrapperRef.current.getBoundingClientRect();
-      const lensX = rect.left + rect.width * 0.6;
-      const lensY = rect.top + rect.height * 0.5;
+  // const handleClick = () => {
+  //   if (wrapperRef.current) {
+  //     const rect = wrapperRef.current.getBoundingClientRect();
+  //     const lensX = rect.left + rect.width * 0.6;
+  //     const lensY = rect.top + rect.height * 0.5;
 
-      setFlashPos({ top: lensY, left: lensX });
-      setFlash(true);
+  //     setFlashPos({ top: lensY, left: lensX });
+  //     setFlash(true);
 
-      setTimeout(() => {
-        setFlash(false);
-      }, 300);
-    }
-  };
+  //     setTimeout(() => {
+  //       setFlash(false);
+  //     }, 300);
+  //   }
+  // };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleClick();
-    }, 5500);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleClick();
+  //   }, 5500);
 
-    return () => clearInterval(interval);
-  }, []);
-
-  //SHOTS
-
-  //animation
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div className={styles.home}>
@@ -92,8 +88,8 @@ function Home() {
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             ref={wrapperRef}
-            onClick={handleClick}
             className={styles.profileWrapper}
           >
             <LazyLoadImage
@@ -103,7 +99,7 @@ function Home() {
               className={styles.image}
             />
           </motion.div>
-          {flash && (
+          {/* {flash && (
             <>
               <div
                 key={flashKey}
@@ -128,7 +124,7 @@ function Home() {
                 }}
               />
             </>
-          )}
+          )} */}
         </div>
       </div>
 

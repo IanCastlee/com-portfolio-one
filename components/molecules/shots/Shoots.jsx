@@ -2,7 +2,7 @@ import { shoots } from "../../../constants/shoots";
 import styles from "./Shoots.module.scss";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { images } from "../../../constants/images";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ImageCard from "../imageCard/ImageCard";
 import { RiGalleryView } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
@@ -13,13 +13,17 @@ function Shoots() {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("All Category");
 
-  const filterCategory = [...new Set(shoots.map((categ) => categ.category))];
-  const categories = ["All Category", ...filterCategory];
+  const filterCategory = useMemo(() => {
+    return [...new Set(shoots.map((categ) => categ.category))];
+  }, []);
 
-  const mapCategory =
-    selectedCategory !== "All Category"
+  const mapCategory = useMemo(() => {
+    return selectedCategory !== "All Category"
       ? shoots.filter((categ) => categ.category === selectedCategory)
       : shoots;
+  }, [selectedCategory]);
+
+  const categories = ["All Category", ...filterCategory];
 
   const handleRedirect = () => {
     navigate(`/shots/${selectedCategory}`);
@@ -68,11 +72,13 @@ function Shoots() {
             className={styles.categorySelector}
           >
             {categories &&
-              categories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
+              categories.map((category) => {
+                return (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                );
+              })}
           </select>
         </div>
         <button onClick={handleRedirect} className={styles.btnViewAll}>
@@ -84,6 +90,8 @@ function Shoots() {
         <div className={styles.shootsContainer}>
           {mapCategory &&
             mapCategory.slice(0, 8).map((item) => {
+              console.log("🔁 ImageCard re-rendered:", item);
+
               return <ImageCard item={item} key={item.id} />;
             })}
         </div>
